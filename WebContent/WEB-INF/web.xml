@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>QuestionView</servlet-name>
+    <servlet-class>controller.QuestionViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuestionView</servlet-name>
+    <url-pattern>/servlet/QuestionViewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/servlet/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminReset</servlet-name>
+    <servlet-class>controller.AdminResetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminReset</servlet-name>
+    <url-pattern>/servlet/AdminResetServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>QuestionOperate</servlet-name>
+    <servlet-class>controller.QuestionOperateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuestionOperate</servlet-name>
+    <url-pattern>/servlet/QuestionOperateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Loginout</servlet-name>
+    <servlet-class>controller.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginout</servlet-name>
+    <url-pattern>/servlet/LoginOutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+    <filter-name>codeFilter</filter-name>
+    <filter-class>filter.CodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>codeFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+ 
+   
+  
+</web-app>
